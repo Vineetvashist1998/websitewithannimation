@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#fff,  #ffe6e6);
+    position: relative;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    position: relative;
+}
+nav img{
+    width: 40px;
+    cursor: pointer;
+}
+
+nav ul{
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+nav ul li{
+    list-style: none;
+    color: #a1a1a1;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+nav ul::after {
+    content: '';
+    width: 2px;
+    height: 170px;
+    background: #d0d0d0;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+}
+
+.content{
+    max-width: 600px;
+    margin-top: 100px;
+}
+
+.content h1{
+    font-size: 60px;
+}
+
+.content p{
+    max-width: 450px;
+    color: #a1a1a1;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    margin: 40px 0;
+}
+
+
+.car-image {
+    width: 50%;
+    position: absolute;
+     right: 70px;
+     bottom: 60px;
+     transition: 1 ,ease;
+}
+
+.car-image:hover{
+    right: 55px;
+    bottom: 40px;
+}
+
+.content button{
+    display: block;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffe6e6;
+    background-color:  #000;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    box-shadow: 2px 4px 10px rgba(0,0,0,0.6) ;
+  }
+
+
+  
+  .content button:hover{
+    color: #000;
+    background-color: #ffe6e6;
+    
+  }
+
+  .bottom-menu{
+      display: flex;
+      position: absolute;
+      bottom: 50px;
+      color: #a1a1a1;
+  }
+
+  .bottom-menu:hover{
+    color: #000;
+  }
+
+  .bottom-menu div{
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      margin-right: 50px;
+  }
+
+.bottom-menu img{
+    width: 25px;
+    margin-right: 15px;
+
+
+}
